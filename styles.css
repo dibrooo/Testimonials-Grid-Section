@@ -89,4 +89,14 @@ main {
 #card5 {
   grid-column: 4;
   grid-row: 1/span 2;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 75px 25px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
