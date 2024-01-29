@@ -7,6 +7,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 150px;
@@ -89,6 +90,15 @@ main {
 #card5 {
   grid-column: 4;
   grid-row: 1/span 2;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (max-width: 768px) {
