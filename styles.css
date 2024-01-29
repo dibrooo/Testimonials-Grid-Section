@@ -1,1 +1,70 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 35px;
+  border-radius: 10px;
+}
+.testimonial-card .user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 18px;
+}
+.testimonial-card .user-wrapper img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid;
+  border-radius: 100%;
+}
+.testimonial-card .user-wrapper span {
+  font-size: 15px;
+}
+.testimonial-card h2 {
+  font-size: 23px;
+}
+.testimonial-card label {
+  opacity: 50%;
+}
+.testimonial-card p {
+  line-height: 18px;
+  opacity: 70%;
+}
+
+#card1 {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+}
+
+#card2 {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+}
+
+#card3,
+#card5 {
+  color: hsl(219, 29%, 14%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+#card4 {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 29%, 14%);
+}/*# sourceMappingURL=styles.css.map */
