@@ -14,10 +14,20 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 body {
-  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+  min-height: 100vh;
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: $light-grayish-blue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 .testimonial-card {
@@ -30,13 +40,12 @@ body {
   .user-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     line-height: 18px;
 
     img {
       width: 33px;
       height: 33px;
-      border: 1px solid;
       border-radius: 100%;
     }
 
@@ -46,7 +55,7 @@ body {
   }
 
   h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   label {
@@ -60,11 +69,16 @@ body {
 }
 
 #card1 {
+  grid-column: span 2;
   color: $white;
   background-color: $moderate-violet;
   background-image: url("images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: 90% 0;
+
+  img {
+    border: 2px solid #a775f1;
+  }
 }
 
 #card2 {
@@ -79,6 +93,16 @@ body {
 }
 
 #card4 {
+  grid-column: span 2;
   color: $white;
   background-color: $very-dark-blackish-blue;
+
+  img {
+    border: 2px solid $moderate-violet;
+  }
+}
+
+#card5 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
 }
